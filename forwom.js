@@ -230,6 +230,10 @@ let womensData = [
     
          let div= document.createElement("div");
          
+                div.addEventListener("click",function(){
+                  add(el);
+                })
+
          let image=document.createElement("img")
          image.setAttribute("src",el.image_url)
          image.style.width="100%"
@@ -249,5 +253,19 @@ let womensData = [
     
       })
     }
+
+    let showArr=[];
+    
+    function add(el){
+      
+
+      showArr.push(el);
+      localStorage.setItem("list",JSON.stringify(showArr));
+      showArr.splice(0,showArr.length);
+    }
+    
+
+
+
     
     
