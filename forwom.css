@@ -41,10 +41,12 @@ margin-top: 10px;}
 margin-top: 20px;
 display: grid;
 grid-template-columns: repeat(3,1fr);
-gap: 20px;}
+gap: 20px;
+}
 
 #main>div{padding: 5px;}
-#main>div:hover{box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;}
+#main>div:hover{box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+cursor: pointer;}
 
 #ldiv{display: flex;
 justify-content: space-between;
@@ -52,3 +54,30 @@ justify-content: space-between;
 
 #ldiv>div{width: 20%;}
 #ldiv>div>img{width: 100%;}
+
+.icon{display: flex;
+  justify-content: center;
+  gap: 20px;
+border: 1px solid gray;
+height: 50px;}
+
+.icon>h4:hover{text-decoration: underline;
+cursor: pointer;}
+
+#bottom{display: flex;
+justify-content: space-between;
+background-color: rgb(197, 194, 194);
+padding: 10px;}
+
+#bottom>h4:hover{text-decoration: underline;
+  cursor: pointer;
+}
+
+#help>p:first-child{font-weight: bold;
+
+}
+
+a{text-decoration: none;
+color: black;}
+a:hover{text-decoration: underline;}
+
