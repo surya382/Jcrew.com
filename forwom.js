@@ -262,6 +262,7 @@ let womensData = [
       showArr.push(el);
       localStorage.setItem("list",JSON.stringify(showArr));
       showArr.splice(0,showArr.length);
+      window.location.href="show.html";
     }
     
 

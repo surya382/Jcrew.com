@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+
+        #car{display: flex;
+        flex-direction: column;
+    gap: 10px;
+border: 1px solid black;}
+
+    .prod{display: flex;
+    }
+
+    
+    </style>
+</head>
+<body>
+    <h2>Shopping Bag</h2>
+ <div id="car">
+
+ </div>
+
+</body>
+</html>
+
+<script>
+
+    let cartArr=JSON.parse(localStorage.getItem("check")) || [];
+       
+    let amount=localStorage.getItem("quantity");
+
+    console.log(amount);
+
+    cartArr.forEach(function(el){
+
+        let box=document.createElement("div");
+        box.setAttribute("class","prod");
+
+        let pic=document.createElement("img");
+        pic.setAttribute("src",el.image_url);
+        pic.style.width="300px"
+
+
+        let div=document.createElement("div");
+         div.setAttribute("class","detail");
+
+         let name=document.createElement("h4");
+         name.innerText=el.name;
+
+         let size=document.createElement("p");
+         size.innerText="size:"+" "+el.size;
+
+         let amt=document.createElement("p");
+         amt.innerText=
+
+
+        div.append(name,size,amt)   
+
+        box.append(pic,div)
+
+        document.querySelector("#car").append(box);
+    })
+
+</script>

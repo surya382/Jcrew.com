@@ -5,30 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-    *{font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-font-weight: bold;
-font-size: large;}
-   #nav{height: 100px;
-width: 100%;
-border: 1px solid gray;
-display: flex;
-gap: 20px;
+    
+   <link rel="stylesheet" href="navbar.css">
 
-}
-
-#nav>div{height: 100%;
-width: 10%;
-margin-top: 8px;
-margin-left: 10px;}
-
-#nav>div>img{width: 100%;}
-
-#cash{border: 0px;
-  
-}
-
-    </style>
+    
 </head>
 <body>
 
@@ -60,22 +40,19 @@ margin-left: 10px;}
                <h5>Stories</h5>
                <h5>Sale</h5>
     
+              <button>Cart</button>
+               
+    </div>
+
+    <div>
+        <img src="https://www.jcrew.com/brand_creative/2022/202207-Jul/flyout/2022jul_0719_flyouts_m_img0.jpg" alt="">
     </div>
     
-    
+  
 </body>
 </html>
-<script>
+<script src="navbar.js">
 
-document.querySelector("#cash").addEventListener("change",move);
 
-function move(){
-event.preventDefault();
-    let selected=document.querySelector("#cash").value;
-    
-    if(selected=="For Women")
-    {console.log(selected);
-        window.location.href="forwom.html";}
-}
 
 </script>
