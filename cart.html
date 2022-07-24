@@ -11,11 +11,25 @@
         #car{display: flex;
         flex-direction: column;
     gap: 10px;
-border: 1px solid black;}
+}
 
     .prod{display: flex;
     }
 
+    .detail{padding: 5px;}
+    .detail>p{font-weight: bold;}
+
+    .detail>p:last-child{text-decoration: underline;
+    cursor: pointer;}
+
+    h3{text-align: center;}
+
+    #las{margin-left: 45%;
+        padding: 5px;
+        background-color: black;
+        color: aliceblue;
+        border-radius: 5px;
+    }
     
     </style>
 </head>
@@ -24,6 +38,9 @@ border: 1px solid black;}
  <div id="car">
 
  </div>
+  <h3>Subtotal:<span id="tot">0</span></h3>
+
+    <button id="las">Proceed To Checkout</button>
 
 </body>
 </html>
@@ -31,12 +48,15 @@ border: 1px solid black;}
 <script>
 
     let cartArr=JSON.parse(localStorage.getItem("check")) || [];
-       
-    let amount=localStorage.getItem("quantity");
+      
+    let bag=0;
+    
+         display(cartArr);
 
-    console.log(amount);
+         function display(cartArr){
+    
 
-    cartArr.forEach(function(el){
+    cartArr.forEach(function(el,index){
 
         let box=document.createElement("div");
         box.setAttribute("class","prod");
@@ -55,15 +75,45 @@ border: 1px solid black;}
          let size=document.createElement("p");
          size.innerText="size:"+" "+el.size;
 
-         let amt=document.createElement("p");
-         amt.innerText=
+         let pri=document.createElement("p");
+         pri.innerText= "INR"+" "+el.price;
+
+         bag+=+el.price
+
+         document.querySelector("#tot").innerText=bag;
 
 
-        div.append(name,size,amt)   
+         let dele=document.createElement("p");
+         dele.innerText="Remove";
+            
+         dele.addEventListener("click",function(){
+            rem(el,index);
+         })
+        
+
+        div.append(name,size,pri,dele)   
 
         box.append(pic,div)
 
         document.querySelector("#car").append(box);
     })
+         }
+
+
+
+
+
+
+         function rem(el,index){
+
+            cartArr.splice(index,1);
+            document.querySelector("#car").innerHTML="";
+            display(cartArr);
+            localStorage.setItem("check",JSON.stringify(cartArr))
+         }
+
+         document.querySelector("#las").addEventListener("click",function(){
+            alert("Order placed successfully complete payment details")
+         })
 
 </script>

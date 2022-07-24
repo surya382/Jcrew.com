@@ -1,5 +1,5 @@
 
-let dal=JSON.parse(localStorage.getItem("list"));
+let dal=JSON.parse(localStorage.getItem("list")) || [];
     
 display(dal);
 
@@ -44,25 +44,11 @@ function display(dal){
      div5.innerText="Medium";
 
      
-     let select=document.createElement("select");
-     let opt=document.createElement("option");
-     opt.innerText="Quantity";
+     
+    
 
-     let opt1=document.createElement("option");
-     opt1.innerText="1";
 
-     let opt2=document.createElement("option");
-        opt2.innerText="2";
-
-        let opt3=document.createElement("option");
-        opt3.innerText="3";
-
-        let opt4=document.createElement("option");
-        opt4.innerText="4";
-
-        let opt5=document.createElement("option");
-        opt5.innerText="5";
-
+     
               
         let but=document.createElement("div");
 
@@ -99,27 +85,22 @@ function display(dal){
          
           but.append(btn);
 
-          select.append(opt,opt1,opt2,opt3,opt4,opt5)
+          
                      
      size.append(div1,div2,div3,div4,div5);
     
      document.querySelector("#pic").append(image)
-document.querySelector("#cont").append(head,price,p,size,select,but,pd,det,ul)
+document.querySelector("#cont").append(head,price,p,size,but,pd,det,ul)
 
     })
 }
 
-document.querySelector("select").addEventListener("change",quant)
 
-function quant(){
 
-let qty=document.querySelector("select").value;
-  localStorage.setItem("quantity",qty);
-}
-
-let procArr=JSON.parse(localStorage.getItem("check"));
+let procArr=JSON.parse(localStorage.getItem("check"))||[];
 
 function add(el){
   procArr.push(el);
   localStorage.setItem("check",JSON.stringify(procArr));  
 }
+

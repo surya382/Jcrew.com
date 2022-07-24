@@ -266,6 +266,12 @@ let womensData = [
     }
     
 
+    document.querySelector("#jcrew").addEventListener("click",jc);
+
+    function jc(){
+
+      window.location.href="https://twitter.com/jcrew_help";
+    }
 
 
     
