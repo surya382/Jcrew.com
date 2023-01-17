@@ -20,9 +20,8 @@ html,body{
 }
 
 #filter-section{
-  position: sticky;
-  top: 72px;
-  z-index: 500;
+  
+ 
   background-color: white;
   padding-left: 30px;
   width:100%;
@@ -33,8 +32,8 @@ html,body{
 
 select{
   font-size: 14px;
-  font-weight: bold;
-  padding: 10px;
+ 
+  padding: 5px;
 }
  #container {
     display: grid;
