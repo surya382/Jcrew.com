@@ -1,119 +1,883 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        
-
-        #car{display: flex;
-        flex-direction: column;
-    gap: 10px;
-}
-
-    .prod{display: flex;
-    }
-
-    .detail{padding: 5px;}
-    .detail>p{font-weight: bold;}
-
-    .detail>p:last-child{text-decoration: underline;
-    cursor: pointer;}
-
-    h3{text-align: center;}
-
-    #las{margin-left: 45%;
-        padding: 5px;
-        background-color: black;
-        color: aliceblue;
-        border-radius: 5px;
-    }
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart Page</title>
+    <link rel="stylesheet" href="./Styles/cart.css".css">
+    <link rel="stylesheet" href="./Styles/navbar.css">
     
-    </style>
-</head>
-<body>
-    <h2>Shopping Bag</h2>
- <div id="car">
+  </head>
+  <body>
 
- </div>
-  <h3>Subtotal:<span id="tot">0</span></h3>
+    <header class="header">
+        <div class="container">
+          <div class="row v-center">
+            <div class="header-item item-left">
+              <div class="logo">
+                <a href="./index.html">J.CREW</a>
+              </div>
+            </div>
+  
+            <div class="header-item item-center">
+              <nav class="menu">
+                <ul class="menu-main">
+                  <li class="menu-item-has-children">
+                    <a href="#">New</a>
+                    <div class="sub-menu mega-menu mega-menu-column-4">
+                      
+                      <div class="list-item">
+                        <h4 class="tittle">Shop New Arrivals</h4>
+                        <ul>
+                          <li><a href="#">For Women</a></li>
+                          <li><a href="#">For Men</a></li>
+                          <li><a href="#">For Girls</a></li>
+                          <li><a href="#">For Boys</a></li>
+                        </ul>
+                        
+                      </div>
+                      <div class="list-item">
+                        <h4 class="tittle">What To Shop Now</h4>
+                        <ul>
+                          <li style="color: grey;"> <b>WOMEN</b> </li>
+                          <li><a href="#">Linen Shop</a></li>
+                          <li><a href="#">Work ReMix</a></li>
+                          <li><a href="#">Best-deressed Guest</a></li>
+                          <li><a href="#">Black-owned Brands We Love</a></li>
+                          <li><a href="#">New Active Drop: SculptStretch</a></li>
+                          <li><a href="#">GateWay Shop</a></li>
+                          <li><a href="#">New Active Drop: SculptStretch</a></li>
+                          <li><a href="#">Getaway Shop</a></li>
+                          <li><a href="#">Easy Summer Sandals</a></li>
+                        </ul>
+  
+  
+                      </div>
+                      <div class="list-item">
+                        <h4 class="tittle"><br></h4>
+                        <ul>
+                          <li style="color: grey;"> <b>MEN</b> </li>
+                          <li><a href="#">Linen Shop</a></li>
+                          <li><a href="#">Shorts Season</a></li>
+                          <li><a href="#">Best-dressed Guest</a></li>
+                          <li><a href="#">Getway Shop</a></li>
+                          <li><a href="#">Tech Collection</a></li>
+                          <li><a href="#">Graphic Tees</a></li>
+                        </ul>
+                      </div>
+                      
+                      <div class="list-item">
+                        <h4 class="tittle">Featured This Month</h4>
+                        <div id="img-flex">
+                          <div>
+                            <img src="https://www.jcrew.com/brand_creative/2022/202207-Jul/flyout/2022jul_0628_flyouts_new_img1.jpg" alt="">
+                            <h6>Best dressed guest</h6>
+                          </div>
+                          <div>
+                            <img src="https://www.jcrew.com/brand_creative/2022/202207-Jul/flyout/2022jul_0628_flyouts_new_img0.jpg" alt="">
+                            <h6>Getaway shop</h6>
+                          </div>
+  
+                        </div>
+                      </div>
+  
+                    </div>
+                  </li>
+  
+                  <li class="menu-item-has-children">
+                    <a href="./womens.html">Women</a>
+                    <div class="sub-menu mega-menu mega-menu-column-4">
+                      
+                      <div class="list-item">
+                        <h4 class="tittle">WOMEN</h4>
+                        <ul>
+                          <li><a href="#">New Arrivals</a></li>
+                          <li><a href="#">Best Sellers</a></li>
+                          <li><a href="#">Top Rated</a></li>
+                          <li><a href="#">Brands We Love</a></li>
+                          <li><a href="#">The Re-Imagined Shop</a></li>
+                          <li><a href="#">Shop All</a></li>
+                          <li><a href="#">The Sale</a></li>
+                        </ul>
+                        
+                      </div>
+                      <div class="list-item">
+                        <h4 class="tittle">Clothing</h4>
+                        <ul>
+                          <li><a href="#">All Clothing</a></li>
+                          <li><a href="#">Dresses & Jumpsuits</a></li>
+                          <li><a href="#">Shirts & Tops</a></li>
+                          <li><a href="#">Sweaters</a></li>
+                          <li><a href="#">T-Shirts & Tank Tops</a></li>
+                          <li><a href="#">Swimwear</a></li>
+                          <li><a href="#">Pants</a></li>
+                          <li><a href="#">Denim</a></li>
+                          <li><a href="#">Shorts</a></li>
+                          <li><a href="#">Skirts</a></li>
+                          <li><a href="#">Blazers</a></li>
+                          <li><a href="#">Coats & Jackets</a></li>
+                          <li><a href="#">Active</a></li>
+                          <li><a href="#">Matching Sets</a></li>
+                          <li><a href="#">Pajamas & intimates</a></li>
+                          <li><a href="#">Suiting</a></li>
+                          <li><a href="#">Maternity</a></li>
+                          
+                        </ul>
+  
+                      </div>
+                      <div class="list-item">
+                        <h4 class="tittle">Shoes & Sandals</h4>
+                        <ul>
+                          <li><a href="#">All Shoes & Sandals</a></li>
+                          <li><a href="#">Sandals</a></li>
+                          <li><a href="#">Flats</a></li>
+                          <li><a href="#">Espadrilles</a></li>
+                          <li><a href="#">Sneakers</a></li>
+                          <li><a href="#">Heels</a></li>
+                        </ul>
+  
+                        <h4>Accessories</h4>
+                        <ul>
+                          <li><a href="#">All Accessories</a></li>
+                          <li><a href="#">Jewelry</a></li>
+                          <li><a href="#">Bags</a></li>
+                          <li><a href="#">Hats</a></li>
+                          <li><a href="#">Scarves & Wraps</a></li>
+                          <li><a href="#">Accessories & More</a></li>
+                          <li><a href="#">Candles,Beauty, & Home</a></li>
+                          <li><a href="#">Hair</a></li>
+                          <li><a href="#">Socks & Tights</a></li>
+                          <li><a href="#">Belts</a></li>
+                        </ul>
+                      </div>
+                      
+                      <div class="list-item">
+                        <h4 class="tittle">Featured This Month</h4>
+                        <div id="img-flex">
+                          <div>
+                            <img src="https://www.jcrew.com/brand_creative/2022/202207-Jul/flyout/2022jul_0719_flyouts_w_img0.jpg" alt="">
+                            <h6>Summer dress code</h6>
+                          </div>
+                          <div>
+                            <img src="https://www.jcrew.com/brand_creative/2022/202207-Jul/flyout/2022jul_0719_flyouts_w_img1.jpg" alt="">
+                            <h6>Recess Pickaball</h6>
+                          </div>
+  
+                        </div>
+                      </div>
+  
+                    </div>
+                  </li>
+  
+                  <li class="menu-item-has-children">
+                    <a href="./mens.html">Men</a>
+                    <div class="sub-menu mega-menu mega-menu-column-4">
+                      
+                      <div class="list-item">
+                        <h4 class="tittle">WOMEN</h4>
+                        <ul>
+                          <li><a href="#">New Arrivals</a></li>
+                          <li><a href="#">Best Sellers</a></li>
+                          <li><a href="#">Top Rated</a></li>
+                          <li><a href="#">Brands We Love</a></li>
+                          <li><a href="#">The Re-Imagined Shop</a></li>
+                          <li><a href="#">Shop All</a></li>
+                          <li><a href="#">The Sale</a></li>
+                        </ul>
+                        
+                      </div>
+                      <div class="list-item">
+                        <h4 class="tittle">Clothing</h4>
+                        <ul>
+                          <li><a href="#">All Clothing</a></li>
+                          <li><a href="#">Dresses & Jumpsuits</a></li>
+                          <li><a href="#">Shirts & Tops</a></li>
+                          <li><a href="#">Sweaters</a></li>
+                          <li><a href="#">T-Shirts & Tank Tops</a></li>
+                          <li><a href="#">Swimwear</a></li>
+                          <li><a href="#">Pants</a></li>
+                          <li><a href="#">Denim</a></li>
+                          <li><a href="#">Shorts</a></li>
+                          <li><a href="#">Skirts</a></li>
+                          <li><a href="#">Blazers</a></li>
+                          <li><a href="#">Coats & Jackets</a></li>
+                          <li><a href="#">Active</a></li>
+                          <li><a href="#">Matching Sets</a></li>
+                          <li><a href="#">Pajamas & intimates</a></li>
+                          <li><a href="#">Suiting</a></li>
+                          <li><a href="#">Maternity</a></li>
+                          
+                        </ul>
+  
+                      </div>
+                      <div class="list-item">
+                        <h4 class="tittle">Shoes & Sandals</h4>
+                        <ul>
+                          <li><a href="#">All Shoes & Sandals</a></li>
+                          <li><a href="#">Sandals</a></li>
+                          <li><a href="#">Flats</a></li>
+                          <li><a href="#">Espadrilles</a></li>
+                          <li><a href="#">Sneakers</a></li>
+                          <li><a href="#">Heels</a></li>
+                        </ul>
+  
+                        <h4>Accessories</h4>
+                        <ul>
+                          <li><a href="#">All Accessories</a></li>
+                          <li><a href="#">Jewelry</a></li>
+                          <li><a href="#">Bags</a></li>
+                          <li><a href="#">Hats</a></li>
+                          <li><a href="#">Scarves & Wraps</a></li>
+                          <li><a href="#">Accessories & More</a></li>
+                          <li><a href="#">Candles,Beauty, & Home</a></li>
+                          <li><a href="#">Hair</a></li>
+                          <li><a href="#">Socks & Tights</a></li>
+                          <li><a href="#">Belts</a></li>
+                        </ul>
+                      </div>
+                      
+                      <div class="list-item">
+                        <h4 class="tittle">Featured This Month</h4>
+                        <div id="img-flex">
+                          <div>
+                            <img src="https://www.jcrew.com/brand_creative/2022/202207-Jul/flyout/2022jul_0719_flyouts_w_img0.jpg" alt="">
+                            <h6>Summer dress code</h6>
+                          </div>
+                          <div>
+                            <img src="https://www.jcrew.com/brand_creative/2022/202207-Jul/flyout/2022jul_0719_flyouts_w_img1.jpg" alt="">
+                            <h6>Recess Pickaball</h6>
+                          </div>
+  
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+  
+                  <li class="menu-item-has-children">
+                    <a href="#">Kids</a>
+                    <div class="sub-menu mega-menu mega-menu-column-4">
+                      
+                      <div class="list-item">
+                        <h4 class="tittle">WOMEN</h4>
+                        <ul>
+                          <li><a href="#">New Arrivals</a></li>
+                          <li><a href="#">Best Sellers</a></li>
+                          <li><a href="#">Top Rated</a></li>
+                          <li><a href="#">Brands We Love</a></li>
+                          <li><a href="#">The Re-Imagined Shop</a></li>
+                          <li><a href="#">Shop All</a></li>
+                          <li><a href="#">The Sale</a></li>
+                        </ul>
+                        
+                      </div>
+                      <div class="list-item">
+                        <h4 class="tittle">Clothing</h4>
+                        <ul>
+                          <li><a href="#">All Clothing</a></li>
+                          <li><a href="#">Dresses & Jumpsuits</a></li>
+                          <li><a href="#">Shirts & Tops</a></li>
+                          <li><a href="#">Sweaters</a></li>
+                          <li><a href="#">T-Shirts & Tank Tops</a></li>
+                          <li><a href="#">Swimwear</a></li>
+                          <li><a href="#">Pants</a></li>
+                          <li><a href="#">Denim</a></li>
+                          <li><a href="#">Shorts</a></li>
+                          <li><a href="#">Skirts</a></li>
+                          <li><a href="#">Blazers</a></li>
+                          <li><a href="#">Coats & Jackets</a></li>
+                          <li><a href="#">Active</a></li>
+                          <li><a href="#">Matching Sets</a></li>
+                          <li><a href="#">Pajamas & intimates</a></li>
+                          <li><a href="#">Suiting</a></li>
+                          <li><a href="#">Maternity</a></li>
+                          
+                        </ul>
+  
+                      </div>
+                      <div class="list-item">
+                        <h4 class="tittle">Shoes & Sandals</h4>
+                        <ul>
+                          <li><a href="#">All Shoes & Sandals</a></li>
+                          <li><a href="#">Sandals</a></li>
+                          <li><a href="#">Flats</a></li>
+                          <li><a href="#">Espadrilles</a></li>
+                          <li><a href="#">Sneakers</a></li>
+                          <li><a href="#">Heels</a></li>
+                        </ul>
+  
+                        <h4>Accessories</h4>
+                        <ul>
+                          <li><a href="#">All Accessories</a></li>
+                          <li><a href="#">Jewelry</a></li>
+                          <li><a href="#">Bags</a></li>
+                          <li><a href="#">Hats</a></li>
+                          <li><a href="#">Scarves & Wraps</a></li>
+                          <li><a href="#">Accessories & More</a></li>
+                          <li><a href="#">Candles,Beauty, & Home</a></li>
+                          <li><a href="#">Hair</a></li>
+                          <li><a href="#">Socks & Tights</a></li>
+                          <li><a href="#">Belts</a></li>
+                        </ul>
+                      </div>
+                      
+                      <div class="list-item">
+                        <h4 class="tittle">Featured This Month</h4>
+                        <div id="img-flex">
+                          <div>
+                            <img src="https://www.jcrew.com/brand_creative/2022/202207-Jul/flyout/2022jul_0719_flyouts_w_img0.jpg" alt="">
+                            <h6>Summer dress code</h6>
+                          </div>
+                          <div>
+                            <img src="https://www.jcrew.com/brand_creative/2022/202207-Jul/flyout/2022jul_0719_flyouts_w_img1.jpg" alt="">
+                            <h6>Recess Pickaball</h6>
+                          </div>
+  
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+  
+                  <li class="menu-item-has-children">
+                    <a href="#">Swim</a>
+                    <div class="sub-menu mega-menu mega-menu-column-4">
+                      
+                      <div class="list-item">
+                        <h4 class="tittle">WOMEN</h4>
+                        <ul>
+                          <li><a href="#">New Arrivals</a></li>
+                          <li><a href="#">Best Sellers</a></li>
+                          <li><a href="#">Top Rated</a></li>
+                          <li><a href="#">Brands We Love</a></li>
+                          <li><a href="#">The Re-Imagined Shop</a></li>
+                          <li><a href="#">Shop All</a></li>
+                          <li><a href="#">The Sale</a></li>
+                        </ul>
+                        
+                      </div>
+                      <div class="list-item">
+                        <h4 class="tittle">Clothing</h4>
+                        <ul>
+                          <li><a href="#">All Clothing</a></li>
+                          <li><a href="#">Dresses & Jumpsuits</a></li>
+                          <li><a href="#">Shirts & Tops</a></li>
+                          <li><a href="#">Sweaters</a></li>
+                          <li><a href="#">T-Shirts & Tank Tops</a></li>
+                          <li><a href="#">Swimwear</a></li>
+                          <li><a href="#">Pants</a></li>
+                          <li><a href="#">Denim</a></li>
+                          <li><a href="#">Shorts</a></li>
+                          <li><a href="#">Skirts</a></li>
+                          <li><a href="#">Blazers</a></li>
+                          <li><a href="#">Coats & Jackets</a></li>
+                          <li><a href="#">Active</a></li>
+                          <li><a href="#">Matching Sets</a></li>
+                          <li><a href="#">Pajamas & intimates</a></li>
+                          <li><a href="#">Suiting</a></li>
+                          <li><a href="#">Maternity</a></li>
+                          
+                        </ul>
+  
+                      </div>
+                      <div class="list-item">
+                        <h4 class="tittle">Shoes & Sandals</h4>
+                        <ul>
+                          <li><a href="#">All Shoes & Sandals</a></li>
+                          <li><a href="#">Sandals</a></li>
+                          <li><a href="#">Flats</a></li>
+                          <li><a href="#">Espadrilles</a></li>
+                          <li><a href="#">Sneakers</a></li>
+                          <li><a href="#">Heels</a></li>
+                        </ul>
+  
+                        <h4>Accessories</h4>
+                        <ul>
+                          <li><a href="#">All Accessories</a></li>
+                          <li><a href="#">Jewelry</a></li>
+                          <li><a href="#">Bags</a></li>
+                          <li><a href="#">Hats</a></li>
+                          <li><a href="#">Scarves & Wraps</a></li>
+                          <li><a href="#">Accessories & More</a></li>
+                          <li><a href="#">Candles,Beauty, & Home</a></li>
+                          <li><a href="#">Hair</a></li>
+                          <li><a href="#">Socks & Tights</a></li>
+                          <li><a href="#">Belts</a></li>
+                        </ul>
+                      </div>
+                      
+                      <div class="list-item">
+                        <h4 class="tittle">Featured This Month</h4>
+                        <div id="img-flex">
+                          <div>
+                            <img src="https://www.jcrew.com/brand_creative/2022/202207-Jul/flyout/2022jul_0719_flyouts_w_img0.jpg" alt="">
+                            <h6>Summer dress code</h6>
+                          </div>
+                          <div>
+                            <img src="https://www.jcrew.com/brand_creative/2022/202207-Jul/flyout/2022jul_0719_flyouts_w_img1.jpg" alt="">
+                            <h6>Recess Pickaball</h6>
+                          </div>
+  
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+  
+                  <li class="menu-item-has-children">
+                    <a href="#">Cashmere</a>
+                    <div class="sub-menu single column-menu">
+                      <ul>
+                        <h3>Shop Cashmere</h3>
+                        <li>
+                          <a href="#">For Women</a>
+                        </li>
+                        <li>
+                          <a href="#">For Men</a>
+                        </li>
+                        <li>
+                          <a href="#">For Girls</a>
+                        </li>
+                        <li>
+                          <a href="#">For Boys</a>
+                        </li>
+                        <li>
+                          <a href="#">For Baby</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+  
+                  <li class="menu-item-has-children">
+                    <a href="#">Home</a>
+                    <div class="sub-menu mega-menu mega-menu-column-4">
+                      
+                      <div class="list-item">
+                        <h4 class="tittle">WOMEN</h4>
+                        <ul>
+                          <li><a href="#">New Arrivals</a></li>
+                          <li><a href="#">Best Sellers</a></li>
+                          <li><a href="#">Top Rated</a></li>
+                          <li><a href="#">Brands We Love</a></li>
+                          <li><a href="#">The Re-Imagined Shop</a></li>
+                          <li><a href="#">Shop All</a></li>
+                          <li><a href="#">The Sale</a></li>
+                        </ul>
+                        
+                      </div>
+                      <div class="list-item">
+                        <h4 class="tittle">Clothing</h4>
+                        <ul>
+                          <li><a href="#">All Clothing</a></li>
+                          <li><a href="#">Dresses & Jumpsuits</a></li>
+                          <li><a href="#">Shirts & Tops</a></li>
+                          <li><a href="#">Sweaters</a></li>
+                          <li><a href="#">T-Shirts & Tank Tops</a></li>
+                          <li><a href="#">Swimwear</a></li>
+                          <li><a href="#">Pants</a></li>
+                          <li><a href="#">Denim</a></li>
+                          <li><a href="#">Shorts</a></li>
+                          <li><a href="#">Skirts</a></li>
+                          <li><a href="#">Blazers</a></li>
+                          <li><a href="#">Coats & Jackets</a></li>
+                          <li><a href="#">Active</a></li>
+                          <li><a href="#">Matching Sets</a></li>
+                          <li><a href="#">Pajamas & intimates</a></li>
+                          <li><a href="#">Suiting</a></li>
+                          <li><a href="#">Maternity</a></li>
+                          
+                        </ul>
+  
+                      </div>
+                      <div class="list-item">
+                        <h4 class="tittle">Shoes & Sandals</h4>
+                        <ul>
+                          <li><a href="#">All Shoes & Sandals</a></li>
+                          <li><a href="#">Sandals</a></li>
+                          <li><a href="#">Flats</a></li>
+                          <li><a href="#">Espadrilles</a></li>
+                          <li><a href="#">Sneakers</a></li>
+                          <li><a href="#">Heels</a></li>
+                        </ul>
+  
+                        <h4>Accessories</h4>
+                        <ul>
+                          <li><a href="#">All Accessories</a></li>
+                          <li><a href="#">Jewelry</a></li>
+                          <li><a href="#">Bags</a></li>
+                          <li><a href="#">Hats</a></li>
+                          <li><a href="#">Scarves & Wraps</a></li>
+                          <li><a href="#">Accessories & More</a></li>
+                          <li><a href="#">Candles,Beauty, & Home</a></li>
+                          <li><a href="#">Hair</a></li>
+                          <li><a href="#">Socks & Tights</a></li>
+                          <li><a href="#">Belts</a></li>
+                        </ul>
+                      </div>
+                      
+                      <div class="list-item">
+                        <h4 class="tittle">Featured This Month</h4>
+                        <div id="img-flex">
+                          <div>
+                            <img src="https://www.jcrew.com/brand_creative/2022/202207-Jul/flyout/2022jul_0719_flyouts_w_img0.jpg" alt="">
+                            <h6>Summer dress code</h6>
+                          </div>
+                          <div>
+                            <img src="https://www.jcrew.com/brand_creative/2022/202207-Jul/flyout/2022jul_0719_flyouts_w_img1.jpg" alt="">
+                            <h6>Recess Pickaball</h6>
+                          </div>
+  
+                        </div>
+                      </div>
+  
+                    </div>
+                  </li>
+  
+                  <li class="menu-item-has-children">
+                    <a href="#">stories</a>
+                    <div class="sub-menu mega-menu mega-menu-column-4">
+                      
+                      <div class="list-item">
+                        <h4 class="tittle">WOMEN</h4>
+                        <ul>
+                          <li><a href="#">New Arrivals</a></li>
+                          <li><a href="#">Best Sellers</a></li>
+                          <li><a href="#">Top Rated</a></li>
+                          <li><a href="#">Brands We Love</a></li>
+                          <li><a href="#">The Re-Imagined Shop</a></li>
+                          <li><a href="#">Shop All</a></li>
+                          <li><a href="#">The Sale</a></li>
+                        </ul>
+                        
+                      </div>
+                      <div class="list-item">
+                        <h4 class="tittle">Clothing</h4>
+                        <ul>
+                          <li><a href="#">All Clothing</a></li>
+                          <li><a href="#">Dresses & Jumpsuits</a></li>
+                          <li><a href="#">Shirts & Tops</a></li>
+                          <li><a href="#">Sweaters</a></li>
+                          <li><a href="#">T-Shirts & Tank Tops</a></li>
+                          <li><a href="#">Swimwear</a></li>
+                          <li><a href="#">Pants</a></li>
+                          <li><a href="#">Denim</a></li>
+                          <li><a href="#">Shorts</a></li>
+                          <li><a href="#">Skirts</a></li>
+                          <li><a href="#">Blazers</a></li>
+                          <li><a href="#">Coats & Jackets</a></li>
+                          <li><a href="#">Active</a></li>
+                          <li><a href="#">Matching Sets</a></li>
+                          <li><a href="#">Pajamas & intimates</a></li>
+                          <li><a href="#">Suiting</a></li>
+                          <li><a href="#">Maternity</a></li>
+                          
+                        </ul>
+  
+                      </div>
+                      <div class="list-item">
+                        <h4 class="tittle">Shoes & Sandals</h4>
+                        <ul>
+                          <li><a href="#">All Shoes & Sandals</a></li>
+                          <li><a href="#">Sandals</a></li>
+                          <li><a href="#">Flats</a></li>
+                          <li><a href="#">Espadrilles</a></li>
+                          <li><a href="#">Sneakers</a></li>
+                          <li><a href="#">Heels</a></li>
+                        </ul>
+  
+                        <h4>Accessories</h4>
+                        <ul>
+                          <li><a href="#">All Accessories</a></li>
+                          <li><a href="#">Jewelry</a></li>
+                          <li><a href="#">Bags</a></li>
+                          <li><a href="#">Hats</a></li>
+                          <li><a href="#">Scarves & Wraps</a></li>
+                          <li><a href="#">Accessories & More</a></li>
+                          <li><a href="#">Candles,Beauty, & Home</a></li>
+                          <li><a href="#">Hair</a></li>
+                          <li><a href="#">Socks & Tights</a></li>
+                          <li><a href="#">Belts</a></li>
+                        </ul>
+                      </div>
+                      
+                      <div class="list-item">
+                        <h4 class="tittle">Featured This Month</h4>
+                        <div id="img-flex">
+                          <div>
+                            <img src="https://www.jcrew.com/brand_creative/2022/202207-Jul/flyout/2022jul_0719_flyouts_w_img0.jpg" alt="">
+                            <h6>Summer dress code</h6>
+                          </div>
+                          <div>
+                            <img src="https://www.jcrew.com/brand_creative/2022/202207-Jul/flyout/2022jul_0719_flyouts_w_img1.jpg" alt="">
+                            <h6>Recess Pickaball</h6>
+                          </div>
+  
+                        </div>
+                      </div>
+  
+                    </div>
+                  </li>
+  
+                  <li class="menu-item-has-children">
+                    <a href="#">Sale</a>
+                    <div class="sub-menu mega-menu mega-menu-column-4">
+                      
+                      <div class="list-item">
+                        <h4 class="tittle">WOMEN</h4>
+                        <ul>
+                          <li><a href="#">New Arrivals</a></li>
+                          <li><a href="#">Best Sellers</a></li>
+                          <li><a href="#">Top Rated</a></li>
+                          <li><a href="#">Brands We Love</a></li>
+                          <li><a href="#">The Re-Imagined Shop</a></li>
+                          <li><a href="#">Shop All</a></li>
+                          <li><a href="#">The Sale</a></li>
+                        </ul>
+                        
+                      </div>
+                      <div class="list-item">
+                        <h4 class="tittle">Clothing</h4>
+                        <ul>
+                          <li><a href="#">All Clothing</a></li>
+                          <li><a href="#">Dresses & Jumpsuits</a></li>
+                          <li><a href="#">Shirts & Tops</a></li>
+                          <li><a href="#">Sweaters</a></li>
+                          <li><a href="#">T-Shirts & Tank Tops</a></li>
+                          <li><a href="#">Swimwear</a></li>
+                          <li><a href="#">Pants</a></li>
+                          <li><a href="#">Denim</a></li>
+                          <li><a href="#">Shorts</a></li>
+                          <li><a href="#">Skirts</a></li>
+                          <li><a href="#">Blazers</a></li>
+                          <li><a href="#">Coats & Jackets</a></li>
+                          <li><a href="#">Active</a></li>
+                          <li><a href="#">Matching Sets</a></li>
+                          <li><a href="#">Pajamas & intimates</a></li>
+                          <li><a href="#">Suiting</a></li>
+                          <li><a href="#">Maternity</a></li>
+                          
+                        </ul>
+  
+                      </div>
+                      <div class="list-item">
+                        <h4 class="tittle">Shoes & Sandals</h4>
+                        <ul>
+                          <li><a href="#">All Shoes & Sandals</a></li>
+                          <li><a href="#">Sandals</a></li>
+                          <li><a href="#">Flats</a></li>
+                          <li><a href="#">Espadrilles</a></li>
+                          <li><a href="#">Sneakers</a></li>
+                          <li><a href="#">Heels</a></li>
+                        </ul>
+  
+                        <h4>Accessories</h4>
+                        <ul>
+                          <li><a href="#">All Accessories</a></li>
+                          <li><a href="#">Jewelry</a></li>
+                          <li><a href="#">Bags</a></li>
+                          <li><a href="#">Hats</a></li>
+                          <li><a href="#">Scarves & Wraps</a></li>
+                          <li><a href="#">Accessories & More</a></li>
+                          <li><a href="#">Candles,Beauty, & Home</a></li>
+                          <li><a href="#">Hair</a></li>
+                          <li><a href="#">Socks & Tights</a></li>
+                          <li><a href="#">Belts</a></li>
+                        </ul>
+                      </div>
+                      
+                      <div class="list-item">
+                        <h4 class="tittle">Featured This Month</h4>
+                        <div id="img-flex">
+                          <div>
+                            <img src="https://www.jcrew.com/brand_creative/2022/202207-Jul/flyout/2022jul_0719_flyouts_w_img0.jpg" alt="">
+                            <h6>Summer dress code</h6>
+                          </div>
+                          <div>
+                            <img src="https://www.jcrew.com/brand_creative/2022/202207-Jul/flyout/2022jul_0719_flyouts_w_img1.jpg" alt="">
+                            <h6>Recess Pickaball</h6>
+                          </div>
+  
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+  
+            <div class="header-item item-right">
+              <nav class="menu">
+                <ul class="menu-main">
+                  <li>
+                    <i class="fa fa-search icon"></i>
+                    <input
+                      id="search-icon"
+                      type="search"
+                      aria-label="Site wide search"
+                      placeholder="Search J.CREW"
+                    />
+                  </li>
+  
+                  <li id="account">
+                   <p id="login" href="./signin.html">Sign In</p>
+                   <div id="show-account" hidden>
+                    <ul>
+                      <h4>My Account</h4>
+                        <li><a href="#">My Favorites</a></li>
+                        <li><a href="#">Order History</a></li>
+                        <li><a href="#">Account</a></li>
+                        <li><a href="#" id="signout">SignOut</a></li>
+                    
+                    </ul>
+                   </div>
+                  </li>
+  
+                  <li>
+                    <a href="#"
+                    ><i style="font-size: 22px;" class="fa fa-heart icon"
+                      ><!-- <img src="./icons/heart-icon.png" alt="" />--></i 
+                  ></a>
+                </li>
+                <li>
+                  <a href="./cart.html"
+                    ><i style="font-size: 22px; color: black;" class="fa fa-shopping-bag icon"
+                       ><!--<img src="./icons/bag-icon.png" alt="" />--></i 
+                  ></a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+        
+      </header>
+      <div id="second-nav">
+        <p>Have a question? We can help. <a href="#">*</a></p>
+      </div>
+    
 
-    <button id="las">Proceed To Checkout</button>
+    <div id="cart">
+      <div id="container">
+      </div>
+      <div id="checkout">
+        <h4>Total items in Bag:-<span id="total-items">0</span></h4>
+        <h4>Item Subtotal:- <span id="total-price">0</span></h4>
+    <hr>
 
-</body>
+        <label for="">Add a promo</label><br />
+        <input id="coupon" type="text" placeholder="Enter Promocode" />
+        <input id="sub" type="submit" value="Apply" />
+        <hr>
+        <h3>Estimated total:- INR <span id="discount-price">0</span></h3>
+
+        <button id="pay">Check out Now</button>
+        <p>By clicking ‘Check Out Now’, you will be redirected to the eShopWorld checkout page where payment will be taken and your order fulfilled by eShopWorld, J.Crew's preferred partner for international sales.</p>
+      </div>
+    </div>
+
+    <div id="footer-head">
+        <div class="social-sites">
+          <a href="#"><img src="./icons/twitter-icon.png" alt="" />@jcrew_help</a>
+  
+          <a href="#"
+            ><img src="./icons/phone-icon.png" alt="" /> 1 432 433 6546</a
+          >
+          <a href=""><img src="./icons/mail-icon.png" alt="" /> email</a>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="footer-content">
+          <div class="footer-section-left">
+            <div class="footer-section help">
+              <div id="footer-list-item">
+                <h4><b>Help</b></h4>
+                <ul>
+                  <li><a href="#">Customer Service</a></li>
+                  <li><a href="#">Track Order</a></li>
+                  <li><a href="#">Returns & Exchanges</a></li>
+                  <li><a href="#">Shipping</a></li>
+                  <li><a href="#">International Orders</a></li>
+                  <li><a href="#">Contact Us</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="footer-section links">
+              <div id="footer-list-item">
+                <h4><b>Quick Links</b></h4>
+                <ul>
+                  <li><a href="#">Find a Store</a></li>
+                  <li><a href="#">Size Charts</a></li>
+                  <li><a href="#">Offers & Promotions</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="footer-section about">
+              <div id="footer-list-item">
+                <h4><b>About J.Crew</b></h4>
+                <ul>
+                  <li><a href="#">Our Story</a></li>
+                  <li><a href="#">Careers</a></li>
+                  <li><a href="#">Social Responsibility</a></li>
+                  <li>
+                    <a href="#">California Transparency Act/Modern Slavery Act</a>
+                  </li>
+                  <li><a href="#">Investor Relations</a></li>
+                  <li><a href="#">Terms of Use</a></li>
+                  <li><a href="#">Privacy Policyy</a></li>
+                  <li>
+                    <a href="#">California Do Not Sell My Personal Information</a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      >Diversity, Equity and Inclusion at J.Crew Group</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-section-right">
+            <div class="footer-section like">
+              <div id="footer-list-item">
+                <h4><b>Like Being First?</b></h4>
+                <p>Get can't-miss style news, before everybody else.</p>
+                <p id="show-subcribe"></p>
+                <form>
+                  <input
+                    id="subscribe"
+                    type="email"
+                    placeholder="Enter your email"
+                  />
+                  <input id="subscribe-btn" type="submit" value="Sign Up" />
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="footer-bottom">
+          <div id="social-media">
+            <a href="#"><img src="./icons/instagram-icon.png" alt="" /></a>
+  
+            <a href="#"><img src="./icons/facebook-icon.png" alt="" /></a>
+  
+            <a href="#"><img src="./icons/twitter-icon.png" alt="" /></a>
+  
+            <a href="#"><img src="./icons/linkedin-icon.png" alt="" /></a>
+  
+            <a href="#"><img src="./icons/pinterest-icon.png" alt="" /></a>
+  
+            <a href="#"><img src="./icons/youtube-icon.png" alt="" /></a>
+          </div>
+          <div id="india">
+            <span><a href="#">India</a></span>
+            <span><img src="./icons/india-flag.png" alt="" /></span>
+          </div>
+          <div id="jfactory">
+            <span><img src="./icons/madewell-logo.png" alt="" /></span>
+            <span><img src="./icons/factory-icon.png" alt="" /></span>
+          </div>
+          &copy; 2022 J.Cew
+        </div>
+      </div>
+  </body>
 </html>
-
-<script>
-
-    let cartArr=JSON.parse(localStorage.getItem("check")) || [];
-      
-    let bag=0;
-    
-         display(cartArr);
-
-         function display(cartArr){
-    
-
-    cartArr.forEach(function(el,index){
-
-        let box=document.createElement("div");
-        box.setAttribute("class","prod");
-
-        let pic=document.createElement("img");
-        pic.setAttribute("src",el.image_url);
-        pic.style.width="300px"
-
-
-        let div=document.createElement("div");
-         div.setAttribute("class","detail");
-
-         let name=document.createElement("h4");
-         name.innerText=el.name;
-
-         let size=document.createElement("p");
-         size.innerText="size:"+" "+el.size;
-
-         let pri=document.createElement("p");
-         pri.innerText= "INR"+" "+el.price;
-
-         bag+=+el.price
-
-         document.querySelector("#tot").innerText=bag;
-
-
-         let dele=document.createElement("p");
-         dele.innerText="Remove";
-            
-         dele.addEventListener("click",function(){
-            rem(el,index);
-         })
-        
-
-        div.append(name,size,pri,dele)   
-
-        box.append(pic,div)
-
-        document.querySelector("#car").append(box);
-    })
-         }
-
-
-
-
-
-
-         function rem(el,index){
-
-            cartArr.splice(index,1);
-            document.querySelector("#car").innerHTML="";
-            display(cartArr);
-            localStorage.setItem("check",JSON.stringify(cartArr))
-         }
-
-         document.querySelector("#las").addEventListener("click",function(){
-            alert("Order placed successfully complete payment details")
-         })
-
-</script>
+<script src="./Scripts/cart.js"></script>

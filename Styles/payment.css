@@ -1,0 +1,75 @@
+
+  * {
+    box-sizing: border-box;
+  }
+
+  .header{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 15px;
+  }
+
+  .logo{
+    text-align: center;
+  }
+
+  #container {
+    
+    top:50px;
+    width: 30%;
+    height: 600px;
+    margin: auto;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 10px 20px 30px 20px;
+    margin-top: 100px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  input[type="submit"],
+  input[type="number"],
+  input[type="date"],
+  select,
+  textarea,
+  submit {
+    width: 100%;
+    padding: 10px;
+    border: 0.1px solid;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    
+  }
+
+  #submit {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: blue;
+    color: white;
+  }
+
+  #submit:hover {
+   
+    background-color: rgb(37, 31, 199);
+   
+  }
+  a {
+    color: rgb(26, 23, 110);
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  p,
+  a {
+    text-align: center;
+  }
+  form > label {
+    margin-bottom: 5px;
+    font-size: 18px;
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  

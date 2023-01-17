@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+   <link rel="stylesheet" href="./Styles/payment.css">
+   <link rel="stylesheet" href="./Styles/navbar.css">
+  </head>
+  <body>
+
+    <header class="header">
+              <div class="logo">
+                <a href="./index.html">J.CREW</a>
+              </div>
+      </header>
+    <div id="container">
+      <form>
+        <h2>Payment</h2>
+        <label for="">Card Number</label>
+        <input id="cardNumber" type="text" placeholder="Enter Card number" />
+        <label for="">CVV</label>
+        <input id="cvv" type="number" placeholder="Enter CVV" />
+        <label for="">EXP Date</label>
+        <input id="date" type="text" placeholder="Enter date" />
+        <label for="">Name</label>
+        <input id="name" type="text" placeholder="Enter your name " />
+        <label id="otplabel" for="" hidden>OTP</label>
+        <input id="otp" type="number" placeholder="Enter otp " hidden />
+        <input value="Submit" type="submit" id="submit" /> 
+        <p><a href="./index.html">Home</a></p>
+      </form>
+    </div>
+
+    <div id="footer-head">
+        <div class="social-sites">
+          <a href="#"><img src="./icons/twitter-icon.png" alt="" />@jcrew_help</a>
+  
+          <a href="#"
+            ><img src="./icons/phone-icon.png" alt="" /> 1 432 433 6546</a
+          >
+          <a href=""><img src="./icons/mail-icon.png" alt="" /> email</a>
+        </div>
+      </div>
+  </body>
+</html>
+
+<script src="./Scripts/payment.js"></script>

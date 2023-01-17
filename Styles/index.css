@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Sanskrit&display=swap');
+
+/* #banner-section{
+    position: absolute;
+} */
+
+#top-banner{
+    padding-top: 120px;
+   height: auto;
+    display: flex;
+    background-color: #cbd5e1;
+}
+
+#top-banner>div{
+    width: 50%;
+}
+
+#top-banner-left>img{
+    width: 90%;
+    height: 100%;
+}
+
+#top-banner-right{
+    display: flex;
+    padding-top: 90px;
+    text-align: center;
+}
+#top-banner-right>div{
+    width: 50%;
+}
+
+#top-banner-right>div>img{
+    width: 100%;
+    border: 5px solid #0369a1;  
+}
+
+#top-banner-right>div:nth-child(2){
+    width: 80%; 
+}
+
+#top-banner-right>div:nth-child(2)>img:nth-child(1){
+    width: 70%;
+    border: 10px solid white;   
+}
+
+#top-banner-right>div:nth-child(2)>img:nth-child(2){
+    width: 60%;
+    border: 5px solid #0369a1;
+    margin-top: -50px;
+    margin-left: 80px;   
+}
+
+#top-banner-right>div:nth-child(1)>div{
+    width: 130%;
+    margin-top: 50px;
+    margin-left: -20px;
+    padding: 0px;
+    line-height: 1.5;
+     
+}
+
+#top-banner-right>div:nth-child(1)>div>h1:nth-child(1){
+    font-size: 40px;
+    color:#0369a1; 
+    font-style: italic;   
+}
+
+#top-banner-right>div:nth-child(1)>div>h1:nth-child(2){
+    font-size: 100px;
+    color:#0369a1;  
+  font-family: 'Lora', serif;
+  margin-top: -20px;
+}
+
+
+#top-banner-second{
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(3,739px);
+    margin-top: 50px;
+    
+
+}
+
+
+#top-banner-second>div>img{
+    width: 100%;
+    position: static;
+}
+
+#top-banner-second>div{
+    position: relative;
+}
+
+#top-banner-second>div>span{
+    position: absolute;
+    bottom: 370px;
+    left: 20%;
+    font-family: 'Tiro Devanagari Sanskrit', serif;
+    font-size: 35px;
+    color: white;
+}
+
+
+#top-banner-second>div:nth-child(1)>span{
+    color: black;
+}
+#top-banner-second>div:nth-child(2)>span{
+    color: black;
+}
+
+#mid-banner>div>img{
+    width: 100%;
+}
+
+
+#shop-arrivals{
+    text-align: center;
+    margin: auto;
+    
+    margin:50px 0 50px 0;
+    display: flex;
+    justify-content: center;
+
+}
+
+#shop-arrivals>button{
+    margin-left: 40px;
+    padding: 8px 20px;
+    background-color: white;
+    
+}
+
+#shop-arrivals>button>a{
+    font-size: 16px;
+    color: black;
+    font-weight: bold;
+}
+
+#shop-arrivals>button:hover>a{
+    color: white;
+}
+#shop-arrivals>button:hover{
+   
+    background-color: grey;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s ease;
+
+}
+
+
+
+
+
+
+
+
+
+#coming-soon>div>h3{
+    position: relative;
+    bottom: 30px;
+    color: black;
+    text-align: center;
+    margin-right: 300px;
+    font-size: 25px;
+
+}
+#banner-cart-love{
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    gap: 10px;
+   margin-top: 40px;
+}
+
+#banner-cart-love>div>img{
+    width: 100%;
+}
+
+.heading-center{
+    text-align: center;
+    margin-top: 100px;
+    font-size: 40px;
+    font-weight: 300;
+
+}
+
+
+#more-cart{
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    gap: 10px;
+   margin-top: 40px;
+   text-align: center;
+}
+
+#more-cart>div>img{
+    width: 100%;
+}
+
+#more-cart>div>h4>a{
+    color: black;
+    font-size: 12px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+
+@media all and (min-width:481px) and (max-width:768px) {
+    #top-banner-right{
+       visibility: hidden;
+         
+    }
+
+    #top-banner>div{
+        width: 100%;
+    }
+   }
+  
+   @media all and (min-width:320px) and (max-width:480px) {
+    #top-banner-right{
+        visibility: hidden;    
+     }
+
+     #top-banner>div{
+        width: 100%;
+    }
+
+   }
+
