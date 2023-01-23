@@ -79,8 +79,8 @@ select{
   #container > div {
     margin: auto;
     margin-bottom: 20px;
-    padding: 10px;
-    padding-bottom: 0PX;
+    padding: 20px;
+    padding-bottom: 10px;
   }
 
   
@@ -91,15 +91,14 @@ select{
 
 
   #container>div:hover{
+    border-radius: 20px;
     box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
   }
 
 
 
   button {
-    position: relative;
-    bottom: 150px;
-    left: 38%;
+    
     padding: 10px 25px;
     cursor: pointer;
     opacity: 0;
@@ -111,10 +110,12 @@ select{
 
   #container > div:hover>button{
     opacity: 1;
+    width: 100%;
   }
 
   button:hover{
-    background-color: white;
+    background-color: black;
+    color: white;
   }
 
  
