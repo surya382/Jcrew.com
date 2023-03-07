@@ -21,4 +21,4 @@
 ![Screenshot (239)](https://user-images.githubusercontent.com/107528641/214023428-aa01e8a1-a828-4b2b-8ebc-d46b8affe56c.png)
 
   # Deployed Link :-
-     https://gleeful-crisp-1a6f51.netlify.app/
+     https://frolicking-khapse-19d58f.netlify.app/
